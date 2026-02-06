@@ -28,7 +28,7 @@
 
 1. **Clone the Repository**:
 ```bash
-   git clone iamshubhshrma/voiceagent
+   git clone https://github.com/iamshubhshrma/voiceagent.git
    cd voiceagent
 ```
 
