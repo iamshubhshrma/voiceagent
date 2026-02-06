@@ -2,7 +2,7 @@
 
 **Vani** is an intelligent, voice-interactive assistant built using **LangChain** and **LangGraph**. It leverages the **Model Context Protocol (MCP)** to bridge the gap between Large Language Models and local execution, providing a hands-free experience for managing files, browsing the web, and controlling Windows applications.
 
----
+
 
 ## ✨ Features
 
@@ -12,7 +12,7 @@
 * **Contextual Memory**: Powered by LangGraph's `MemorySaver`, allowing the agent to remember previous parts of the conversation within a session.
 * **Speech Optimization**: Automatically cleans Markdown artifacts (like `**` or `#`) from LLM responses to ensure natural-sounding speech output.
 
----
+
 
 ## 🛠️ Prerequisites
 
@@ -22,7 +22,7 @@
   * `GOOGLE_API_KEY`: Your Gemini API key.
   * `TAVILY_API_KEY`: (Optional) For web search capabilities.
 
----
+
 
 ## 🚀 Installation & Setup
 
@@ -60,7 +60,7 @@ Once the agent says "Hi, I'm Vani," you can give commands such as:
 * *"Launch Notepad and write a quick to-do list."*
 * *Say "Exit" or "Goodbye" to terminate the session.*
 
----
+
 
 ## 📦 Windows Executable (.exe)
 
@@ -79,7 +79,7 @@ For a more convenient experience, you can use the standalone Windows executable.
    * Click **Environment Variables** and add a new User Variable named `GOOGLE_API_KEY` with your key as the value.
 4. **Run**: Double-click `VaniAssistant.exe` to launch the assistant.
 
----
+
 
 ## 🔧 Technical Stack
 
