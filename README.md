@@ -1,4 +1,4 @@
-# 🎙️ Vani: Voice-Activated AI Agent
+# 🎙️ Vani: Voice-Activated AI Agent With MCP and Custom Tools Integration
 
 **Vani** is an intelligent, voice-interactive assistant built using **LangChain** and **LangGraph**. It leverages the **Model Context Protocol (MCP)** to bridge the gap between Large Language Models and local execution, providing a hands-free experience for managing files, browsing the web, and controlling Windows applications.
 
@@ -27,20 +27,23 @@
 ## 🚀 Installation & Setup
 
 1. **Clone the Repository**:
-   ```bash
+```bash
    git clone iamshubhshrma/voiceagent
-   cd voiceagent    
-   
+   cd voiceagent
+```
+
 2. **Install Dependencies**:
-   ```bash
-   pip install langchain-google-genai langgraph langchain-mcp-adapters speechrecognition pyttsx3 pyaudio
-      *Note: If you encounter issues with PyAudio on Windows, use `pip install pipwin` followed by `pipwin install pyaudio`.*
+```bash
+   pip install requirements.txt
+```
+   *Note: If you encounter issues with PyAudio on Windows, use `pip install pipwin` followed by `pipwin install pyaudio`.*
 
 3. **Configure Environment**:
-   ```bash
+```bash
    # Windows PowerShell
    $env:GOOGLE_API_KEY="your_key_here"
-   
+```
+
 ---
 
 ## 💻 Usage
@@ -48,8 +51,10 @@
 Run the agent with the following command:
 ```bash
 python agent.py
+```
 
 Once the agent says "Hi, I'm Vani," you can give commands such as:
+
 * *"Create a python file named hello.py in this directory."*
 * *"Open Chrome and search for the latest machine learning trends."*
 * *"Launch Notepad and write a quick to-do list."*
@@ -62,22 +67,24 @@ Once the agent says "Hi, I'm Vani," you can give commands such as:
 For a more convenient experience, you can use the standalone Windows executable. This version bundles the Python runtime and all necessary libraries into a single folder, so you don't need to manage a Python environment.
 
 ### **Download**
+
 > 📥 [**VaniAssistant (.exe)**](https://drive.google.com/file/d/1F86oeBSBbDkegfCToqlfn9kangh3Deyt/view?usp=sharing)
 
 ### **Setup & Running the EXE**
+
 1. **Extract**: Download the ZIP file and extract the contents to a folder on your PC.
 2. **Node.js Dependency**: Since Vani uses MCP tools, you **must** have [Node.js](https://nodejs.org/) installed on your system for the filesystem and search tools to work.
 3. **API Key**:
    * Open **Start**, search for "Environment Variables," and select "Edit the system environment variables."
    * Click **Environment Variables** and add a new User Variable named `GOOGLE_API_KEY` with your key as the value.
-4. **Run**: Double-click `agent.exe` to launch the assistant.
+4. **Run**: Double-click `VaniAssistant.exe` to launch the assistant.
 
 ---
 
 ## 🔧 Technical Stack
 
 | Component | Technology |
-| :--- | :--- |
+|:---|:---|
 | **Orchestration** | LangGraph / LangChain |
 | **Model** | Gemini 2.5 Flash |
 | **Tool Protocol** | Model Context Protocol (MCP) |
