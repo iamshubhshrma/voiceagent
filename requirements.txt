@@ -1,0 +1,7 @@
+langchain-google-genai
+langchain-core
+mcp
+SpeechRecognition
+pyttsx3
+PyAudio
+python-dotenv
